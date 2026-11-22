@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Adyalathon</title>
+  <meta name="description" content="Get in touch with Adyalathon about technical staffing, software tools or AI workflows.">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/img/logo-64.png" alt="" width="40" height="40">Adyalathon</a>
+      <nav class="nav" aria-label="Main">
+        <a href="./">Home</a>
+        <a href="about.html">About &amp; Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Switch theme">&#9790;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-head">
+      <div class="wrap">
+        <h1>Contact</h1>
+        <p>Tell us a little about what you need. We read every message and reply personally.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="wrap">
+        <form class="form" id="contact-form" novalidate>
+          <div class="row-2">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="200">
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="field">
+              <label for="company">Company <span class="hint">(optional)</span></label>
+              <input id="company" name="company" type="text" autocomplete="organization" maxlength="150">
+            </div>
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option>Technical staffing</option>
+                <option>Software tools or AI workflows</option>
+                <option>Software and 3D-printed hardware</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required maxlength="5000"></textarea>
+          </div>
+
+          <!-- Spam trap: people never see or fill this field. -->
+          <div class="hp" aria-hidden="true">
+            <label for="website">Leave this field empty</label>
+            <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Adyalathon</span>
+      <span class="muted"><a href="contact.html">Contact</a></span>
+    </div>
+  </footer>
+</body>
+</html>
